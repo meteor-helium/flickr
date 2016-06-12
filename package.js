@@ -7,6 +7,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom("METEOR@1.2.0.2");
+
   api.use('http', ['client', 'server']);
   api.use('templating', 'client');
   api.use('oauth1', ['client', 'server']);
